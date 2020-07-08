@@ -15,6 +15,11 @@ function rollD6() {
     console.log(d6Result);
   }
 
+function rollD8() {
+    let d8Result = d8[Math.floor(Math.random() * d8.length)];
+    console.log(d8Result);
+  }
+
 function rollD10() {
     let d10Result = d10[Math.floor(Math.random() * d10.length)];
     console.log(d10Result);
@@ -29,9 +34,3 @@ function rollD20() {
     let d20Result = d20[Math.floor(Math.random() * d20.length)];
     console.log(d20Result);
   }
-
-rollD4();
-rollD6();
-rollD10();
-rollD12();
-rollD20();
