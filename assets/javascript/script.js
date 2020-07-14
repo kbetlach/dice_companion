@@ -12,25 +12,19 @@ let d20 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
 function rollD4() {
 
   let roll = [];
-  for(var i=0;i<diceQuantity.value;i++) {
+  for (var i = 0; i < diceQuantity.value; i++) {
     roll.push( d4[Math.floor(Math.random() * d4.length)] );
     console.log(roll);
   }
 
-  resultsDiv.innerHTML = roll;
-//
-//  if (diceQuantity.value <= 1 && diceModifier.value === '') {
-//    resultsDiv.innerHTML = d4Result;
-//  }
-//  else if (diceQuantity.value <=1 && diceModifier.value) {
-//  resultsDiv.innerHTML = diceModifier.value + " + " + d4Result;
-//  }
-//  else if (diceQuantity.value && diceModifier.value === '') {
-//    resultsDiv.innerHTML = diceQuantity.value + " + " + d4Result;
-//  }
-//  else {
-//    resultsDiv.innerHTML = diceQuantity.value + " + " + diceModifier.value + " + " + d4Result;
-//  }
+  if (diceQuantity.value && diceModifier.value === '') {
+    let rollResult = roll.reduce((a, b) => a + b, 0);
+    resultsDiv.innerHTML = rollResult;
+  }
+  else {
+    let rollResult = roll.reduce((a, b) => a + b, 0);
+    resultsDiv.innerHTML = rollResult + " + " + diceModifier.value;
+  }
 }
 
 function rollD6() {
