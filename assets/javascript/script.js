@@ -1,4 +1,5 @@
 let resultsDiv = document.querySelector("#results");
+let maxDiv = document.querySelector("#max");
 let diceQuantity = document.querySelector("#quantity");
 let diceModifier = document.querySelector("#modifier");
 
@@ -17,13 +18,16 @@ function rollD4() {
     console.log(roll);
   }
 
+  maxDiv.innerHTML = "The maximum number you could roll is...!";
+
   if (diceQuantity.value && diceModifier.value === '') {
     let rollResult = roll.reduce((a, b) => a + b, 0);
     resultsDiv.innerHTML = rollResult;
   }
   else {
     let rollResult = roll.reduce((a, b) => a + b, 0);
-    resultsDiv.innerHTML = rollResult + " + " + diceModifier.value;
+    let totalRoll = parseInt(rollResult) + parseInt(diceModifier.value);
+    resultsDiv.innerHTML = rollResult + " + " + diceModifier.value + " = " + totalRoll + "!";
   }
 }
 
