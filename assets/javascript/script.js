@@ -32,26 +32,106 @@ function rollD4() {
 }
 
 function rollD6() {
-    let d6Result = d6[Math.floor(Math.random() * d6.length)];
-    resultsDiv.innerHTML = d6Result;
+
+  let roll = [];
+  for (var i = 0; i < diceQuantity.value; i++) {
+    roll.push( d6[Math.floor(Math.random() * d6.length)] );
+    console.log(roll);
+  }
+
+  maxDiv.innerHTML = "The maximum number you could roll is...!";
+
+  if (diceQuantity.value && diceModifier.value === '') {
+    let rollResult = roll.reduce((a, b) => a + b, 0);
+    resultsDiv.innerHTML = rollResult;
+  }
+  else {
+    let rollResult = roll.reduce((a, b) => a + b, 0);
+    let totalRoll = parseInt(rollResult) + parseInt(diceModifier.value);
+    resultsDiv.innerHTML = rollResult + " + " + diceModifier.value + " = " + totalRoll + "!";
+  }
   }
 
 function rollD8() {
-    let d8Result = d8[Math.floor(Math.random() * d8.length)];
-    resultsDiv.innerHTML = d8Result;
+
+  let roll = [];
+  for (var i = 0; i < diceQuantity.value; i++) {
+    roll.push( d8[Math.floor(Math.random() * d8.length)] );
+    console.log(roll);
+  }
+
+  maxDiv.innerHTML = "The maximum number you could roll is...!";
+
+  if (diceQuantity.value && diceModifier.value === '') {
+    let rollResult = roll.reduce((a, b) => a + b, 0);
+    resultsDiv.innerHTML = rollResult;
+  }
+  else {
+    let rollResult = roll.reduce((a, b) => a + b, 0);
+    let totalRoll = parseInt(rollResult) + parseInt(diceModifier.value);
+    resultsDiv.innerHTML = rollResult + " + " + diceModifier.value + " = " + totalRoll + "!";
+  }
   }
 
 function rollD10() {
-    let d10Result = d10[Math.floor(Math.random() * d10.length)];
-    resultsDiv.innerHTML = d10Result;
+
+  let roll = [];
+  for (var i = 0; i < diceQuantity.value; i++) {
+    roll.push( d10[Math.floor(Math.random() * d10.length)] );
+    console.log(roll);
+  }
+
+  maxDiv.innerHTML = "The maximum number you could roll is...!";
+
+  if (diceQuantity.value && diceModifier.value === '') {
+    let rollResult = roll.reduce((a, b) => a + b, 0);
+    resultsDiv.innerHTML = rollResult;
+  }
+  else {
+    let rollResult = roll.reduce((a, b) => a + b, 0);
+    let totalRoll = parseInt(rollResult) + parseInt(diceModifier.value);
+    resultsDiv.innerHTML = rollResult + " + " + diceModifier.value + " = " + totalRoll + "!";
+  }
   }
 
 function rollD12() {
-    let d12Result = d12[Math.floor(Math.random() * d12.length)];
-    resultsDiv.innerHTML = d12Result;
+
+  let roll = [];
+  for (var i = 0; i < diceQuantity.value; i++) {
+    roll.push( d12[Math.floor(Math.random() * d12.length)] );
+    console.log(roll);
+  }
+
+  maxDiv.innerHTML = "The maximum number you could roll is...!";
+
+  if (diceQuantity.value && diceModifier.value === '') {
+    let rollResult = roll.reduce((a, b) => a + b, 0);
+    resultsDiv.innerHTML = rollResult;
+  }
+  else {
+    let rollResult = roll.reduce((a, b) => a + b, 0);
+    let totalRoll = parseInt(rollResult) + parseInt(diceModifier.value);
+    resultsDiv.innerHTML = rollResult + " + " + diceModifier.value + " = " + totalRoll + "!";
+  }
   }
 
 function rollD20() {
-    let d20Result = d20[Math.floor(Math.random() * d20.length)];
-    resultsDiv.innerHTML = d20Result;
+
+  let roll = [];
+  for (var i = 0; i < diceQuantity.value; i++) {
+    roll.push( d20[Math.floor(Math.random() * d20.length)] );
+    console.log(roll);
+  }
+
+  maxDiv.innerHTML = "The maximum number you could roll is...!";
+
+  if (diceQuantity.value && diceModifier.value === '') {
+    let rollResult = roll.reduce((a, b) => a + b, 0);
+    resultsDiv.innerHTML = rollResult;
+  }
+  else {
+    let rollResult = roll.reduce((a, b) => a + b, 0);
+    let totalRoll = parseInt(rollResult) + parseInt(diceModifier.value);
+    resultsDiv.innerHTML = rollResult + " + " + diceModifier.value + " = " + totalRoll + "!";
+  }
   }
