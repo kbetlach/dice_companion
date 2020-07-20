@@ -22,12 +22,12 @@ function rollD4() {
 
   if (diceQuantity.value && diceModifier.value === '') {
     let rollResult = roll.reduce((a, b) => a + b, 0);
-    resultsDiv.innerHTML = rollResult;
+    resultsDiv.innerHTML = roll + " = " + rollResult + "!";
   }
   else {
     let rollResult = roll.reduce((a, b) => a + b, 0);
     let totalRoll = parseInt(rollResult) + parseInt(diceModifier.value);
-    resultsDiv.innerHTML = rollResult + " + " + diceModifier.value + " = " + totalRoll + "!";
+    resultsDiv.innerHTML = roll + " + " + diceModifier.value + " = " + totalRoll + "!";
   }
 }
 
@@ -43,13 +43,13 @@ function rollD6() {
 
   if (diceQuantity.value && diceModifier.value === '') {
     let rollResult = roll.reduce((a, b) => a + b, 0);
-    resultsDiv.innerHTML = rollResult;
+    resultsDiv.innerHTML = roll + " = " + rollResult + "!";
   }
   else {
     let rollResult = roll.reduce((a, b) => a + b, 0);
     let totalRoll = parseInt(rollResult) + parseInt(diceModifier.value);
-    resultsDiv.innerHTML = rollResult + " + " + diceModifier.value + " = " + totalRoll + "!";
-  }
+    resultsDiv.innerHTML = roll + " + " + diceModifier.value + " = " + totalRoll + "!";
+   }
   }
 
 function rollD8() {
@@ -64,12 +64,12 @@ function rollD8() {
 
   if (diceQuantity.value && diceModifier.value === '') {
     let rollResult = roll.reduce((a, b) => a + b, 0);
-    resultsDiv.innerHTML = rollResult;
+    resultsDiv.innerHTML = roll + " = " + rollResult + "!";
   }
   else {
     let rollResult = roll.reduce((a, b) => a + b, 0);
     let totalRoll = parseInt(rollResult) + parseInt(diceModifier.value);
-    resultsDiv.innerHTML = rollResult + " + " + diceModifier.value + " = " + totalRoll + "!";
+    resultsDiv.innerHTML = roll + " + " + diceModifier.value + " = " + totalRoll + "!";
   }
   }
 
@@ -85,12 +85,12 @@ function rollD10() {
 
   if (diceQuantity.value && diceModifier.value === '') {
     let rollResult = roll.reduce((a, b) => a + b, 0);
-    resultsDiv.innerHTML = rollResult;
+    resultsDiv.innerHTML = roll + " = " + rollResult + "!";
   }
   else {
     let rollResult = roll.reduce((a, b) => a + b, 0);
     let totalRoll = parseInt(rollResult) + parseInt(diceModifier.value);
-    resultsDiv.innerHTML = rollResult + " + " + diceModifier.value + " = " + totalRoll + "!";
+    resultsDiv.innerHTML = roll + " + " + diceModifier.value + " = " + totalRoll + "!";
   }
   }
 
@@ -106,12 +106,12 @@ function rollD12() {
 
   if (diceQuantity.value && diceModifier.value === '') {
     let rollResult = roll.reduce((a, b) => a + b, 0);
-    resultsDiv.innerHTML = rollResult;
+    resultsDiv.innerHTML = roll + " = " + rollResult + "!";
   }
   else {
     let rollResult = roll.reduce((a, b) => a + b, 0);
     let totalRoll = parseInt(rollResult) + parseInt(diceModifier.value);
-    resultsDiv.innerHTML = rollResult + " + " + diceModifier.value + " = " + totalRoll + "!";
+    resultsDiv.innerHTML = roll + " + " + diceModifier.value + " = " + totalRoll + "!";
   }
   }
 
@@ -127,11 +127,11 @@ function rollD20() {
 
   if (diceQuantity.value && diceModifier.value === '') {
     let rollResult = roll.reduce((a, b) => a + b, 0);
-    resultsDiv.innerHTML = rollResult;
+    resultsDiv.innerHTML = roll + " = " + rollResult + "!";
   }
   else {
     let rollResult = roll.reduce((a, b) => a + b, 0);
     let totalRoll = parseInt(rollResult) + parseInt(diceModifier.value);
-    resultsDiv.innerHTML = rollResult + " + " + diceModifier.value + " = " + totalRoll + "!";
+    resultsDiv.innerHTML = roll + " + " + diceModifier.value + " = " + totalRoll + "!";
   }
   }
