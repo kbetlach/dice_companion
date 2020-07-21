@@ -20,7 +20,10 @@ function rollD4() {
 
   maxDiv.innerHTML = "The maximum number you could roll is...!";
 
-  if (diceQuantity.value && diceModifier.value === '') {
+  if (diceQuantity.value <= 1 && diceModifier.value === '') {
+    resultsDiv.innerHTML = roll;
+  }
+  else if (diceQuantity.value >1 && diceModifier.value === '') {
     let rollResult = roll.reduce((a, b) => a + b, 0);
     resultsDiv.innerHTML = roll + " = " + rollResult + "!";
   }
@@ -41,7 +44,10 @@ function rollD6() {
 
   maxDiv.innerHTML = "The maximum number you could roll is...!";
 
-  if (diceQuantity.value && diceModifier.value === '') {
+  if (diceQuantity.value <= 1 && diceModifier.value === '') {
+    resultsDiv.innerHTML = roll;
+  }
+  else if (diceQuantity.value >1 && diceModifier.value === '') {
     let rollResult = roll.reduce((a, b) => a + b, 0);
     resultsDiv.innerHTML = roll + " = " + rollResult + "!";
   }
@@ -49,8 +55,8 @@ function rollD6() {
     let rollResult = roll.reduce((a, b) => a + b, 0);
     let totalRoll = parseInt(rollResult) + parseInt(diceModifier.value);
     resultsDiv.innerHTML = roll + " + " + diceModifier.value + " = " + totalRoll + "!";
-   }
   }
+}
 
 function rollD8() {
 
@@ -62,7 +68,10 @@ function rollD8() {
 
   maxDiv.innerHTML = "The maximum number you could roll is...!";
 
-  if (diceQuantity.value && diceModifier.value === '') {
+  if (diceQuantity.value <= 1 && diceModifier.value === '') {
+    resultsDiv.innerHTML = roll;
+  }
+  else if (diceQuantity.value >1 && diceModifier.value === '') {
     let rollResult = roll.reduce((a, b) => a + b, 0);
     resultsDiv.innerHTML = roll + " = " + rollResult + "!";
   }
@@ -71,7 +80,7 @@ function rollD8() {
     let totalRoll = parseInt(rollResult) + parseInt(diceModifier.value);
     resultsDiv.innerHTML = roll + " + " + diceModifier.value + " = " + totalRoll + "!";
   }
-  }
+}
 
 function rollD10() {
 
@@ -83,7 +92,10 @@ function rollD10() {
 
   maxDiv.innerHTML = "The maximum number you could roll is...!";
 
-  if (diceQuantity.value && diceModifier.value === '') {
+  if (diceQuantity.value <= 1 && diceModifier.value === '') {
+    resultsDiv.innerHTML = roll;
+  }
+  else if (diceQuantity.value >1 && diceModifier.value === '') {
     let rollResult = roll.reduce((a, b) => a + b, 0);
     resultsDiv.innerHTML = roll + " = " + rollResult + "!";
   }
@@ -92,7 +104,7 @@ function rollD10() {
     let totalRoll = parseInt(rollResult) + parseInt(diceModifier.value);
     resultsDiv.innerHTML = roll + " + " + diceModifier.value + " = " + totalRoll + "!";
   }
-  }
+}
 
 function rollD12() {
 
@@ -104,7 +116,10 @@ function rollD12() {
 
   maxDiv.innerHTML = "The maximum number you could roll is...!";
 
-  if (diceQuantity.value && diceModifier.value === '') {
+  if (diceQuantity.value <= 1 && diceModifier.value === '') {
+    resultsDiv.innerHTML = roll;
+  }
+  else if (diceQuantity.value >1 && diceModifier.value === '') {
     let rollResult = roll.reduce((a, b) => a + b, 0);
     resultsDiv.innerHTML = roll + " = " + rollResult + "!";
   }
@@ -113,7 +128,7 @@ function rollD12() {
     let totalRoll = parseInt(rollResult) + parseInt(diceModifier.value);
     resultsDiv.innerHTML = roll + " + " + diceModifier.value + " = " + totalRoll + "!";
   }
-  }
+}
 
 function rollD20() {
 
@@ -125,7 +140,10 @@ function rollD20() {
 
   maxDiv.innerHTML = "The maximum number you could roll is...!";
 
-  if (diceQuantity.value && diceModifier.value === '') {
+  if (diceQuantity.value <= 1 && diceModifier.value === '') {
+    resultsDiv.innerHTML = roll;
+  }
+  else if (diceQuantity.value >1 && diceModifier.value === '') {
     let rollResult = roll.reduce((a, b) => a + b, 0);
     resultsDiv.innerHTML = roll + " = " + rollResult + "!";
   }
@@ -134,4 +152,4 @@ function rollD20() {
     let totalRoll = parseInt(rollResult) + parseInt(diceModifier.value);
     resultsDiv.innerHTML = roll + " + " + diceModifier.value + " = " + totalRoll + "!";
   }
-  }
+}

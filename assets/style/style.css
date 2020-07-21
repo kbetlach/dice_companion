@@ -1,5 +1,16 @@
+body {
+    font-family: 'Grenze Gotisch', cursive;
+    background: url("../images/fantasy.jpg");
+}
+
 .jumbotron {
-    margin-top: 100px;
+    margin-top: 50px;
+    background-color: rgb(238,238,238, .9);
+    border-radius: 25px;
+}
+
+h1 {
+    font-size: 42px;
 }
 
 img {
