@@ -18,7 +18,13 @@ function rollD4() {
     console.log(roll);
   }
 
-  maxDiv.innerHTML = "The maximum number you could roll is...!";
+  let maxRoll = parseInt(4 * diceQuantity.value) + parseInt(diceModifier.value);
+  if (diceModifier.value === '') {
+    maxDiv.innerHTML = "The maximum number you could roll is " + 4 * diceQuantity.value;
+  }
+  else {
+    maxDiv.innerHTML = "The maximum number you could roll is " + maxRoll;
+  }
 
   if (diceQuantity.value <= 1 && diceModifier.value === '') {
     resultsDiv.innerHTML = roll;
@@ -42,7 +48,13 @@ function rollD6() {
     console.log(roll);
   }
 
-  maxDiv.innerHTML = "The maximum number you could roll is...!";
+  let maxRoll = parseInt(6 * diceQuantity.value) + parseInt(diceModifier.value);
+  if (diceModifier.value === '') {
+    maxDiv.innerHTML = "The maximum number you could roll is " + 6 * diceQuantity.value;
+  }
+  else {
+    maxDiv.innerHTML = "The maximum number you could roll is " + maxRoll;
+  }
 
   if (diceQuantity.value <= 1 && diceModifier.value === '') {
     resultsDiv.innerHTML = roll;
@@ -66,7 +78,13 @@ function rollD8() {
     console.log(roll);
   }
 
-  maxDiv.innerHTML = "The maximum number you could roll is...!";
+  let maxRoll = parseInt(8 * diceQuantity.value) + parseInt(diceModifier.value);
+  if (diceModifier.value === '') {
+    maxDiv.innerHTML = "The maximum number you could roll is " + 8 * diceQuantity.value;
+  }
+  else {
+    maxDiv.innerHTML = "The maximum number you could roll is " + maxRoll;
+  }
 
   if (diceQuantity.value <= 1 && diceModifier.value === '') {
     resultsDiv.innerHTML = roll;
@@ -90,7 +108,13 @@ function rollD10() {
     console.log(roll);
   }
 
-  maxDiv.innerHTML = "The maximum number you could roll is...!";
+  let maxRoll = parseInt(10 * diceQuantity.value) + parseInt(diceModifier.value);
+  if (diceModifier.value === '') {
+    maxDiv.innerHTML = "The maximum number you could roll is " + 10 * diceQuantity.value;
+  }
+  else {
+    maxDiv.innerHTML = "The maximum number you could roll is " + maxRoll;
+  }
 
   if (diceQuantity.value <= 1 && diceModifier.value === '') {
     resultsDiv.innerHTML = roll;
@@ -114,7 +138,13 @@ function rollD12() {
     console.log(roll);
   }
 
-  maxDiv.innerHTML = "The maximum number you could roll is...!";
+  let maxRoll = parseInt(12 * diceQuantity.value) + parseInt(diceModifier.value);
+  if (diceModifier.value === '') {
+    maxDiv.innerHTML = "The maximum number you could roll is " + 12 * diceQuantity.value;
+  }
+  else {
+    maxDiv.innerHTML = "The maximum number you could roll is " + maxRoll;
+  }
 
   if (diceQuantity.value <= 1 && diceModifier.value === '') {
     resultsDiv.innerHTML = roll;
@@ -138,7 +168,13 @@ function rollD20() {
     console.log(roll);
   }
 
-  maxDiv.innerHTML = "The maximum number you could roll is...!";
+  let maxRoll = parseInt(20 * diceQuantity.value) + parseInt(diceModifier.value);
+  if (diceModifier.value === '') {
+    maxDiv.innerHTML = "The maximum number you could roll is " + 20 * diceQuantity.value;
+  }
+  else {
+    maxDiv.innerHTML = "The maximum number you could roll is " + maxRoll;
+  }
 
   if (diceQuantity.value <= 1 && diceModifier.value === '') {
     resultsDiv.innerHTML = roll;
@@ -152,33 +188,4 @@ function rollD20() {
     let totalRoll = parseInt(rollResult) + parseInt(diceModifier.value);
     resultsDiv.innerHTML = roll + " + " + diceModifier.value + " = " + totalRoll + "!";
   }
-}
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
 }
