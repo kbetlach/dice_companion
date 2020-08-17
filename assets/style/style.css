@@ -23,11 +23,6 @@ button {
     padding: 15px;
 }
 
-.fas {
-    background-color: transparent;
-    cursor: pointer;
-}
-
 #results {
     font-size: 38px;
 }
