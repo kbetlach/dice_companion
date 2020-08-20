@@ -21,18 +21,11 @@
 </style>
 
 <body>
+      
+        <button class="w3-button w3-black w3-display-left" onclick="changeBackground()">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
 
     <div class="container">
-        <div class="w3-content w3-display-container">
-            <img class="mySlides" src="assets/images/backgrounds/1.jpg" style="width:100%">
-            <img class="mySlides" src="assets/images/backgrounds/2.jpg" style="width:100%">
-            <img class="mySlides" src="assets/images/backgrounds/3.jpg" style="width:100%">
-            <img class="mySlides" src="assets/images/backgrounds/4.jpg" style="width:100%">
-            <img class="mySlides" src="assets/images/backgrounds/5.jpg" style="width:100%">
-          
-            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-          </div>
 
         <div class="jumbotron">
             <h1 class="text-center">RPG Dice Companion</h1>
@@ -46,7 +39,7 @@
                         <h4>Dice Quantity</h4>
                     </div>
                 <div class="col-md-12 text-center">
-                    <input type="number" id="quantity" value=1>
+                    <input type="number" id="quantity" value=1 min=1>
                 </div>
                 </div>
 
@@ -64,12 +57,12 @@
             <br />
 
             <div class="row">
-                <button class="col-md-2" onclick="rollD4()"><img src="assets/images/dice/d4.jpg" /></button>
-                <button class="col-md-2" onclick="rollD6()"><img src="assets/images/dice/d6.jpg" /></button>
-                <button class="col-md-2" onclick="rollD8()"><img src="assets/images/dice/d8.jpg" /></button>
-                <button class="col-md-2" onclick="rollD10()"><img src="assets/images/dice/d10.jpg" /></button>
-                <button class="col-md-2" onclick="rollD12()"><img src="assets/images/dice/d12.jpg" /></button>
-                <button class="col-md-2" onclick="rollD20()"><img src="assets/images/dice/d20.jpg" /></button>
+                <button class="col-md-2" onclick="rollD4()"><img src="assets/images/dice/d4.jpg" class="diceImg"/></button>
+                <button class="col-md-2" onclick="rollD6()"><img src="assets/images/dice/d6.jpg" class="diceImg"/></button>
+                <button class="col-md-2" onclick="rollD8()"><img src="assets/images/dice/d8.jpg" class="diceImg"/></button>
+                <button class="col-md-2" onclick="rollD10()"><img src="assets/images/dice/d10.jpg" class="diceImg"/></button>
+                <button class="col-md-2" onclick="rollD12()"><img src="assets/images/dice/d12.jpg" class="diceImg"/></button>
+                <button class="col-md-2" onclick="rollD20()"><img src="assets/images/dice/d20.jpg" class="diceImg"/></button>
             </div>
 
             <hr />
